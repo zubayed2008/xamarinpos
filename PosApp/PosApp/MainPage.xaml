@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:customrenderer="clr-namespace:CustomRenderer"
              mc:Ignorable="d"
-             x:Class="PosApp.MainPage" BackgroundColor="#3484A5" BackgroundImageSource="background1.jpg">
+             x:Class="PosApp.MainPage" BackgroundColor="#3484A5"
+             BackgroundImageSource="background1.jpg">
     <ContentPage.Content>
         <StackLayout Padding="0,0,0,200" >
             

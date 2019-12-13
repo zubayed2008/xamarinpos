@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="PosApp.Admin.Sales">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="0,40,0,0">
             <CollectionView ItemsSource="{Binding AnimalModels}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
