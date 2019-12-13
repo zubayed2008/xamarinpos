@@ -8,12 +8,28 @@
              x:Class="PosApp.MainPage" BackgroundColor="#3484A5" BackgroundImageSource="background1.jpg">
     <ContentPage.Content>
         <StackLayout Padding="0,0,0,200" >
+            
                 <BoxView HeightRequest="150"></BoxView>
-                <Label FontSize="22" WidthRequest="140" Text="LOGIN FORM" BackgroundColor="#0275d8" TextColor="White" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold" HorizontalOptions="Center" ></Label>
-                <Label FontSize="16" WidthRequest="220" Text="Best Place to See Shop Stats" BackgroundColor="#0275d8" TextColor="White" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold"  HorizontalOptions="Center"/>
-                <customrenderer:MyEntry x:Name="Username" Margin="30,0,30,0" FontSize="22" FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46" BackgroundColor="White" TextColor="Black" Placeholder="USERNAME" HorizontalTextAlignment="Center" ></customrenderer:MyEntry>
-                <customrenderer:MyEntry x:Name="Password" Margin="30,0,30,0" FontSize="22" FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46" BackgroundColor="White" TextColor="Black" Placeholder="PASSWORD" HorizontalTextAlignment="Center" IsPassword="True" ></customrenderer:MyEntry>
-                <Button WidthRequest="160" HorizontalOptions="Center" BackgroundColor="#0275d8" TextColor="White" BorderWidth="20" CornerRadius="30" Text="Continue" Clicked="Button_Clicked" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold"></Button>
+            
+            <Label FontSize="22" WidthRequest="140" Text="LOGIN FORM" BackgroundColor="#0275d8"
+                       TextColor="White" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold" HorizontalOptions="Center" />
+
+            <Label FontSize="16" WidthRequest="220" Text="Best Place to See Shop Stats" BackgroundColor="#0275d8"
+                       TextColor="White" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold"  HorizontalOptions="Center"/>
+            
+                <customrenderer:MyEntry x:Name="Username" Margin="30,0,30,0" FontSize="22"
+                                        FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46"
+                                        BackgroundColor="White" TextColor="Black" Placeholder="USERNAME"
+                                        HorizontalTextAlignment="Center" ></customrenderer:MyEntry>
+            
+                <customrenderer:MyEntry x:Name="Password" Margin="30,0,30,0" FontSize="22"
+                                        FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46"
+                                        BackgroundColor="White" TextColor="Black" Placeholder="PASSWORD"
+                                        HorizontalTextAlignment="Center" IsPassword="True" ></customrenderer:MyEntry>
+            
+                <Button WidthRequest="160" HorizontalOptions="Center" BackgroundColor="#0275d8" TextColor="White"
+                        BorderWidth="20" CornerRadius="30" Text="Continue" Clicked="Button_Clicked"
+                        FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold"></Button>
         </StackLayout>
     </ContentPage.Content>
     

@@ -22,19 +22,19 @@ namespace PosApp
             userService = new UserService();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
             var username = Username.Text;
             var password = Password.Text;
             var role = userService.getUser(username, password);
             if (!String.IsNullOrEmpty(role))
             {
-                var sales = new Sales();
-                Navigation.PushModalAsync(sales);
+                var dashboard = new Dashboard();
+                await Navigation.PushAsync( dashboard);
             }
             else
             {
-                DisplayAlert("Sorry", "User doesn't exist", "OK");
+                await DisplayAlert("Sorry", "User doesn't exist", "OK");
             }
         }
     }

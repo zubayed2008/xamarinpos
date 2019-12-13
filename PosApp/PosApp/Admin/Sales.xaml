@@ -48,6 +48,7 @@
                                    FontSize="20"
                                    HorizontalOptions="End"
                                    HorizontalTextAlignment="End"
+                                   TextColor="Red"
                                    Text="{Binding Price}"/>
                         </Grid>
                     </DataTemplate>
