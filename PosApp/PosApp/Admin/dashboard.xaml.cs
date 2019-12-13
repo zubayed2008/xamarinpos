@@ -12,15 +12,23 @@ namespace PosApp.Admin
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Dashboard : ContentPage
 	{
+        bool tapped = true;
 		public Dashboard ()
 		{
 			InitializeComponent ();
+            tapped = true;
 		}
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            var sales = new Sales();
-            await Navigation.PushModalAsync(sales);
+            if (tapped)
+            {
+                tapped = false;
+                var sales = new Sales();
+                await Navigation.PushModalAsync(sales);
+                tapped = true;
+            }
+
         }
     }
 }
