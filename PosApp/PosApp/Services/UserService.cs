@@ -35,7 +35,7 @@ namespace PosApp.Services
         {
             if (!String.IsNullOrEmpty(un) && !String.IsNullOrEmpty(pw))
             {
-                string role = users.Find(m => m.username == un && m.password == pw).role;
+                string role = users.Where(m => m.username == un && m.password == pw).Select(m=>m.role).FirstOrDefault();
                 if (String.IsNullOrEmpty(role))
                 {
                     role = string.Empty;
