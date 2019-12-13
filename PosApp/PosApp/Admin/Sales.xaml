@@ -14,30 +14,45 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"></RowDefinition>
                                 <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                                 <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
 
-                            <Image Grid.RowSpan="2"
+                            <Image Grid.RowSpan="3"
                                    Source="{Binding ImageUrl}"
                                    Aspect="AspectFill"
-                                   HeightRequest="60"
-                                   WidthRequest="60" />
+                                   HeightRequest="80"
+                                   WidthRequest="80" />
                             <Label Grid.Row="0"
                                    Grid.Column="1"
                                    Text="{Binding Name}"
-                                   FontAttributes="Bold"/>
+                                   FontAttributes="Bold"
+                                   FontSize="20"/>
                             <Label Grid.Row="1"
                                    Grid.Column="1"
+                                   Text="{Binding Date}"
+                                   FontAttributes="Bold"
+                                   FontSize="16"/>
+                            <Label Grid.Row="2"
+                                   Grid.Column="1"
+                                   FontSize="16"
                                    Text="{Binding Location}"
                                    VerticalOptions="End"/>
+                            <Label Grid.Row ="1" 
+                                   Grid.Column="2"
+                                   FontAttributes="Bold"
+                                   FontSize="20"
+                                   HorizontalOptions="End"
+                                   HorizontalTextAlignment="End"
+                                   Text="{Binding Price}"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
