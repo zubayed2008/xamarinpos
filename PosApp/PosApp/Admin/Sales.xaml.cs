@@ -14,7 +14,6 @@ namespace PosApp.Admin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Sales : ContentPage
     {
-        SaleService SaleService;
         public Sales()
         {
             InitializeComponent();
@@ -27,11 +26,14 @@ namespace PosApp.Admin
 
         async Task LoadData()
         {
-            await Task.Factory.StartNew(()=>
+            try
             {
-                SaleService = new SaleService();
-                BindingContext = SaleService;
-            });
+                BindingContext = new SaleService();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
     }
 }

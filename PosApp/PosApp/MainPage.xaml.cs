@@ -30,7 +30,7 @@ namespace PosApp
             if (!String.IsNullOrEmpty(role))
             {
                 var dashboard = new Dashboard();
-                await Navigation.PushAsync( dashboard);
+                await Navigation.PushAsync(dashboard);
             }
             else
             {

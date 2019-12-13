@@ -17,10 +17,10 @@ namespace PosApp.Admin
 			InitializeComponent ();
 		}
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             var sales = new Sales();
-            NavigationPage navigation = new NavigationPage(sales);
+            await Navigation.PushModalAsync(sales);
         }
     }
 }
