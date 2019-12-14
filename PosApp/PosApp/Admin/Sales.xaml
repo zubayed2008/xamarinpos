@@ -37,11 +37,19 @@
                                    Text="{Binding Date}"
                                    FontAttributes="Bold"
                                    FontSize="16"/>
-                            <Label Grid.Row="2"
+                            <Frame Padding="0" Grid.Row="2"
+                                   HeightRequest="14"
+                                   CornerRadius="10"
+                                   HasShadow="True"
                                    Grid.Column="1"
-                                   FontSize="16"
+                                   HorizontalOptions="Start">
+                                <Label
+                                   FontSize="14"
                                    Text="{Binding Location}"
-                                   VerticalOptions="End"/>
+                                   VerticalOptions="Start"
+                                    HorizontalTextAlignment="Center"/>
+                            </Frame>
+                            
                             <Label Grid.Row ="1" 
                                    Grid.Column="2"
                                    FontAttributes="Bold"

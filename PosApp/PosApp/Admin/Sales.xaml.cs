@@ -18,13 +18,13 @@ namespace PosApp.Admin
         {
             InitializeComponent();
         }
-        protected override async void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
-            await LoadData();
+             LoadData();
         }
 
-        async Task LoadData()
+        void LoadData()
         {
             try
             {
