@@ -28,7 +28,7 @@
                                    HeightRequest="80"
                                    WidthRequest="80" />
                             <Label Grid.Row="0"
-                                   Grid.Column="1"
+                                   Grid.Column="1" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold"
                                    Text="{Binding Name}"
                                    FontAttributes="Bold"
                                    FontSize="20"/>
@@ -37,26 +37,23 @@
                                    Text="{Binding Date}"
                                    FontAttributes="Bold"
                                    FontSize="16"/>
-                            <Frame Padding="0" Grid.Row="2"
-                                   HeightRequest="14"
-                                   CornerRadius="10"
-                                   HasShadow="True"
-                                   Grid.Column="1"
-                                   HorizontalOptions="Start">
-                                <Label
-                                   FontSize="14"
+
+                            <Label Grid.Row="2" Grid.Column="1"
+                                   HeightRequest="22" Margin="2"
+                                   FontSize="16" TextColor="White"
+                                   HorizontalOptions="Start" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold"
                                    Text="{Binding Location}"
                                    VerticalOptions="Start"
+                                   BackgroundColor="#6c757d"
                                     HorizontalTextAlignment="Center"/>
-                            </Frame>
-                            
+
                             <Label Grid.Row ="1" 
                                    Grid.Column="2"
                                    FontAttributes="Bold"
-                                   FontSize="20"
+                                   FontSize="20" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold"
                                    HorizontalOptions="End"
                                    HorizontalTextAlignment="End"
-                                   TextColor="Red"
+                                   TextColor="#6f42c1"
                                    Text="{Binding Price}"/>
                         </Grid>
                     </DataTemplate>

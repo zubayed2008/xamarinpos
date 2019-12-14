@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Customer\" />
+    <Folder Include="Renderer\" />
   </ItemGroup>
 
   <ItemGroup>

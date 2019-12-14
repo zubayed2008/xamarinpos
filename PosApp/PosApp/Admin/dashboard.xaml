@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:renderers="clr-namespace:PosApp"
              x:Class="PosApp.Admin.Dashboard"  NavigationPage.HasBackButton="false">
     <ContentPage.Content>
         <StackLayout Padding="0,40,0,0">
-            <Grid>
+            <Grid Padding="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
@@ -13,31 +14,72 @@
                     <ColumnDefinition Width="50*"></ColumnDefinition>
                     <ColumnDefinition Width="50*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Frame CornerRadius="40"  HasShadow="True" Grid.Row="0" Grid.Column="0" 
+                <Frame Padding="0" CornerRadius="40"  HasShadow="True" Grid.Row="0" Grid.Column="0" 
                        HeightRequest="200" IsClippedToBounds="True">
-                    <Image Aspect="Fill" Source="checkout.jpg"/>
+                    <renderers:GradientLayout
+                        ColorsList="#3A1C71,#D76D77,#FFAF7B"
+                        Mode="ToBottomRight">
+                        <StackLayout VerticalOptions="CenterAndExpand">
+                            <Label  Text="CHECKOUT" FontSize="26" TextColor="WHITE" VerticalTextAlignment="Center" FontFamily="Roboto-Black.ttf#Roboto-Black"
+                               HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"></Label>
+                            <Label Text="Process to Continue Add more items" FontSize="16" TextColor="white" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"  />
+                        </StackLayout>
+                    </renderers:GradientLayout>
+                    <!--<Image Aspect="Fill" Source="checkout.jpg"/>-->
                 </Frame>
 
-                <Frame CornerRadius="40" HasShadow="True" Grid.Row="0" Grid.Column="1"
+                <Frame Padding="0" CornerRadius="40" HasShadow="True" Grid.Row="0" Grid.Column="1"
                        HeightRequest="200" IsClippedToBounds="True">
-                    <Image Aspect="Fill" Source="sales.jpg"/>
+                    <renderers:GradientLayout
+                        ColorsList="#000046,#000046,#1CB5E0"
+                        Mode="ToBottomRight">
+                        <StackLayout VerticalOptions="CenterAndExpand">
+                            <Label Text="SALES" FontSize="26" TextColor="WHITE" VerticalTextAlignment="Center" FontFamily="Roboto-Black.ttf#Roboto-Black"
+                               HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
+                            <Label Text="Check the sales Report and More" FontSize="16" TextColor="white" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" />
+                        </StackLayout>
+                    </renderers:GradientLayout>
+                    <!--<Image Aspect="Fill" Source="sales.jpg"/>-->
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
                     </Frame.GestureRecognizers>
                 </Frame>
 
-                <Frame CornerRadius="40" HasShadow="True" Grid.Row="1" Grid.Column="0"
+                <Frame Padding="0" CornerRadius="40" HasShadow="True" Grid.Row="1" Grid.Column="0"
                        HeightRequest="200" IsClippedToBounds="True">
-                    <Image Aspect="Fill" Source="products.jpg"/>
+                    <renderers:GradientLayout
+                        ColorsList="#20002c,#20002c,#cbb4d4"
+                        Mode="ToTopRight">
+                        <StackLayout VerticalOptions="CenterAndExpand">
+                            <Label Text="PRODUCTS" FontSize="26" TextColor="WHITE" VerticalTextAlignment="Center" FontFamily="Roboto-Black.ttf#Roboto-Black"
+                               HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
+                            <Label Text="Information about your current Products" FontSize="16" TextColor="white" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" />
+                        </StackLayout>
+                    </renderers:GradientLayout>
+                    <!--<Image Aspect="Fill" Source="products.jpg"/>-->
                 </Frame>
 
-                <Frame CornerRadius="40" HasShadow="True" Grid.Row="1" Grid.Column="1"
+                <Frame Padding="0" CornerRadius="40" HasShadow="True" Grid.Row="1" Grid.Column="1"
                        HeightRequest="200" IsClippedToBounds="True">
-                    <Image Aspect="Fill" Source="inventory.jpg"/>
+                    <renderers:GradientLayout
+                        ColorsList="#34e89e,#0f3443,#0f3443"
+                        Mode="ToTopRight">
+                        <StackLayout VerticalOptions="CenterAndExpand">
+                            <Label Text="INVENTORY" FontSize="26" TextColor="WHITE" VerticalTextAlignment="Center" FontFamily="Roboto-Black.ttf#Roboto-Black"
+                               HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
+                            <Label Text="Know more about your stock" FontSize="16" TextColor="white" VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </renderers:GradientLayout>
+                    <!--<Image Aspect="Fill" Source="inventory.jpg"/>-->
                     
                 </Frame>
                 
             </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
