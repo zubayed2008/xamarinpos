@@ -5716,16 +5716,16 @@ namespace PosApp.Droid
 			public const int avd_show_password = 2131165275;
 			
 			// aapt resource value: 0x7F07005C
-			public const int background = 2131165276;
+			public const int card = 2131165276;
 			
 			// aapt resource value: 0x7F07005D
-			public const int background1 = 2131165277;
+			public const int card1 = 2131165277;
 			
 			// aapt resource value: 0x7F07005E
-			public const int card = 2131165278;
+			public const int cash = 2131165278;
 			
 			// aapt resource value: 0x7F07005F
-			public const int cash = 2131165279;
+			public const int cash1 = 2131165279;
 			
 			// aapt resource value: 0x7F070060
 			public const int checkout = 2131165280;
@@ -5815,7 +5815,7 @@ namespace PosApp.Droid
 			public const int RoundCornerbutton = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
-			public const int sales = 2131165309;
+			public const int salesreport = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
 			public const int tooltip_frame_dark = 2131165310;
