@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:renderers="clr-namespace:PosApp"
+             mc:Ignorable="d"
+             x:Class="PosApp.Admin.AdminMaster"
+             Title="Master">
+    <renderers:GradientLayout  ColorsList="#53526c,#0cb499,#0e4753">
+    <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}" WidthRequest="300" Margin="0,20,0,0">
+      <d:ListView.ItemsSource>
+          <x:Array Type="{x:Type x:String}">
+              <x:String>Checkout</x:String>
+              <x:String>Sales Report</x:String>
+              <x:String>Products</x:String>
+              <x:String>Inventory</x:String>
+          </x:Array>
+      </d:ListView.ItemsSource>
+            <ListView.Header>
+                <StackLayout Padding="20,10" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                    <Label VerticalOptions="FillAndExpand" 
+                    VerticalTextAlignment="Center" FontSize="24" TextColor="White"
+                       Text="POS SYSTEM"></Label>
+                </StackLayout>
+            </ListView.Header>
+      <!--<ListView.Header>
+        <Grid BackgroundColor="#03A9F4">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+          </Grid.RowDefinitions>
+          <Label
+              Grid.Column="1"
+              Grid.Row="2"
+              Text="AppName"
+              HorizontalTextAlignment="Center"
+              Style="{DynamicResource SubtitleStyle}"/>
+        </Grid>
+      </ListView.Header>-->
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal" Padding="15,10"
+                                      HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                    <Image Source="{Binding Icon}" WidthRequest="40" HeightRequest="40" VerticalOptions="Center" HorizontalOptions="Start" />
+                    <Label VerticalOptions="FillAndExpand" 
+                    VerticalTextAlignment="Center"
+                    Text="{Binding Title}" TextColor="White"
+                    d:Text="{Binding .}"
+                    FontSize="24"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </renderers:GradientLayout>
+</ContentPage>
