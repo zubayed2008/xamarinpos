@@ -36,7 +36,6 @@ namespace PosApp.Droid
 
             element = (ImageEntry)this.Element;
 
-
             var editText = this.Control;
             if (!string.IsNullOrEmpty(element.Image))
             {
@@ -60,7 +59,7 @@ namespace PosApp.Droid
             var drawable = ContextCompat.GetDrawable(this.Context, resID);
             var bitmap = ((BitmapDrawable)drawable).Bitmap;
 
-            return new BitmapDrawable(Resources, Bitmap.CreateScaledBitmap(bitmap, element.ImageWidth * 2, element.ImageHeight * 2, true));
+            return new BitmapDrawable(Resources, Bitmap.CreateScaledBitmap(bitmap, element.ImageWidth * 1, element.ImageHeight * 1, true));
         }
 
     }

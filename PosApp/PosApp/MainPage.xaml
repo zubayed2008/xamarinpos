@@ -25,8 +25,8 @@
 
             <customrenderer:ImageEntry Margin="5" x:Name="Username" TextColor="White" 
                         PlaceholderColor="White" 
-                        Image="username" FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46"
-                        Placeholder="USERNAME" HorizontalTextAlignment="Center" 
+                        Image="username" FontFamily="Roboto-Black.ttf#Roboto-Black" 
+                        Placeholder="USERNAME" HorizontalTextAlignment="Center" ImageHeight="40" ImageWidth="40"
                         HorizontalOptions="FillAndExpand"/>
             <!--<customrenderer:MyEntry x:Name="Username" Margin="30,0,30,0" FontSize="22"
                                         FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46"
@@ -34,7 +34,7 @@
                                         HorizontalTextAlignment="Center" ></customrenderer:MyEntry>-->
             <customrenderer:ImageEntry Margin="5" x:Name="Password" TextColor="White" 
                         PlaceholderColor="White" IsPassword="True"
-                        Image="password" FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46"
+                        Image="password" FontFamily="Roboto-Black.ttf#Roboto-Black"
                         Placeholder="PASSWORD" HorizontalTextAlignment="Center" 
                         HorizontalOptions="FillAndExpand"/>
             <!--<customrenderer:MyEntry x:Name="Password" Margin="30,0,30,0" FontSize="22"

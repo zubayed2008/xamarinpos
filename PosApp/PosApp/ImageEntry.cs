@@ -7,7 +7,9 @@ namespace CustomRenderer
     {
         public ImageEntry()
         {
-            this.HeightRequest = 50;
+            this.HeightRequest = 26;
+            this.WidthRequest = 40;
+            this.HeightRequest = 40;
         }
         public static readonly BindableProperty ImageProperty =
             BindableProperty.Create(nameof(Image), typeof(string), typeof(ImageEntry), string.Empty);
