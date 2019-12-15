@@ -13,9 +13,9 @@ using Xamarin.Forms.Xaml;
 namespace PosApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Testpopup : PopupPage
+    public partial class SalesDetailPopUp : PopupPage
     {
-        public Testpopup(AnimalModel animalModal)
+        public SalesDetailPopUp(AnimalModel animalModal)
         {
             InitializeComponent();
             name.Text = "Name: " + animalModal.Name;

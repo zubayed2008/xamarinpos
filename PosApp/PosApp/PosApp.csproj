@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Admin\AdminModals\" />
     <Folder Include="Customer\" />
     <Folder Include="Renderer\" />
   </ItemGroup>
@@ -24,6 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Admin\AdminModals\SalesDetailPopUp.xaml.cs">
+      <DependentUpon>SalesDetailPopUp.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Admin\dashboard.xaml.cs">
       <DependentUpon>Dashboard.xaml</DependentUpon>
     </Compile>
@@ -36,7 +38,7 @@
     <EmbeddedResource Update="Admin\Sales.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Testpopup.xaml">
+    <EmbeddedResource Update="Admin\AdminModals\SalesDetailPopUp.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

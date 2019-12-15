@@ -6,7 +6,7 @@
              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"  
              xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"  
              mc:Ignorable="d"
-             x:Class="PosApp.Testpopup">
+             x:Class="PosApp.SalesDetailPopUp">
     <pages:PopupPage.Animation>
         <animations:ScaleAnimation   
                       PositionIn="Center"  

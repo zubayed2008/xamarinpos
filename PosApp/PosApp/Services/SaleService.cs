@@ -23,7 +23,7 @@ namespace PosApp.Services
         #region command
         public void OnTap(AnimalModel animalModel)
         {
-            Application.Current.MainPage.Navigation.PushPopupAsync(new Testpopup(animalModel), true);
+            Application.Current.MainPage.Navigation.PushPopupAsync(new SalesDetailPopUp(animalModel), true);
         }
         public event PropertyChangedEventHandler PropertyChanged;
         public ICommand tapcommand { get; private set; }
