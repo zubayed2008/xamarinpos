@@ -31,7 +31,17 @@
                 <Button WidthRequest="160" HorizontalOptions="Center" BackgroundColor="#0275d8" TextColor="White"
                         BorderWidth="20" CornerRadius="30" Text="Continue" Clicked="Button_Clicked"
                         FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold"></Button>
-        </StackLayout>
+
+
+            <!--<StackLayout Padding="40" Spacing="10">
+                <customrenderer:ImageEntry TextColor="White" 
+                        PlaceholderColor="Blue" 
+                        Image="username" 
+                        Placeholder="Email" 
+                        HorizontalOptions="FillAndExpand"/>
+            </StackLayout>-->
+            
+        </StackLayout>  
     </ContentPage.Content>
     
 </ContentPage>

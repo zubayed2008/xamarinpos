@@ -5820,6 +5820,9 @@ namespace PosApp.Droid
 			// aapt resource value: 0x7F07007E
 			public const int tooltip_frame_light = 2131165310;
 			
+			// aapt resource value: 0x7F07007F
+			public const int username = 2131165311;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
