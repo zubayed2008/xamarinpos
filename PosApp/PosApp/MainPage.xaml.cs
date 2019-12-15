@@ -27,6 +27,7 @@ namespace PosApp
             var username = Username.Text;
             var password = Password.Text;
             var role = userService.getUser(username, password);
+
             if (!String.IsNullOrEmpty(role))
             {
                 var dashboard = new Dashboard();

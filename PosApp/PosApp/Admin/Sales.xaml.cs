@@ -1,5 +1,8 @@
 ﻿using PosApp.Model;
 using PosApp.Services;
+using Rg.Plugins.Popup.Extensions;
+using Rg.Plugins.Popup.Pages;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,12 +31,18 @@ namespace PosApp.Admin
         {
             try
             {
-                BindingContext = new SaleService();
+                this.BindingContext = new SaleService();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }
+        }
+
+        private  void  TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var s = sender as Label;
+            //Navigation.PushPopupAsync(new Testpopup(),true);
         }
     }
 }

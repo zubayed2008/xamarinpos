@@ -1,19 +1,40 @@
 ﻿using PosApp.Model;
+using Rg.Plugins.Popup.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace PosApp.Services
 {
-    class SaleService
+    class SaleService : INotifyPropertyChanged
     {
         public ObservableCollection<AnimalModel> AnimalModels { get; private set; } = new ObservableCollection<AnimalModel>();
 
         public SaleService()
         {
+            tapcommand = new Command<AnimalModel>(OnTap);
             AddBears();
         }
+        #region command
+        public void OnTap(AnimalModel animalModel)
+        {
+            Application.Current.MainPage.Navigation.PushPopupAsync(new Testpopup(animalModel), true);
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        public ICommand tapcommand { get; private set; }
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new PropertyChangedEventArgs(propertyName));
+        }
+        #endregion
         void AddBears()
         {
             AnimalModels.Add(new AnimalModel
