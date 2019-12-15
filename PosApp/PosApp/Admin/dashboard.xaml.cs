@@ -25,7 +25,8 @@ namespace PosApp.Admin
             {
                 tapped = false;
                 var sales = new Sales();
-                await Navigation.PushModalAsync(sales);
+                //NavigationPage sale = new NavigationPage(sales);
+                await Navigation.PushAsync(sales);
                 tapped = true;
             }
 
