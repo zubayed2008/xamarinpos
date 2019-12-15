@@ -20,7 +20,8 @@
                         ColorsList="#3A1C71,#D76D77,#FFAF7B"
                         Mode="ToBottomRight">
                         <StackLayout VerticalOptions="CenterAndExpand">
-                            <Label  Text="CHECKOUT" FontSize="26" TextColor="WHITE" VerticalTextAlignment="Center" FontFamily="Roboto-Black.ttf#Roboto-Black"
+                            <Image HeightRequest="60" WidthRequest="60" Source="checkout.png"></Image>
+                              <Label  Text="CHECKOUT" FontSize="26" TextColor="WHITE" VerticalTextAlignment="Center" FontFamily="Roboto-Black.ttf#Roboto-Black"
                                HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"></Label>
                             <Label Text="Process to Continue Add more items" FontSize="16" TextColor="white" VerticalTextAlignment="Center"
                                HorizontalTextAlignment="Center"  />
@@ -35,6 +36,7 @@
                         ColorsList="#000046,#000046,#1CB5E0"
                         Mode="ToBottomRight">
                         <StackLayout VerticalOptions="CenterAndExpand">
+                            <Image HeightRequest="60" WidthRequest="60" Source="salesreport.png"></Image>
                             <Label Text="SALES" FontSize="26" TextColor="WHITE" VerticalTextAlignment="Center" FontFamily="Roboto-Black.ttf#Roboto-Black"
                                HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
                             <Label Text="Check the sales Report and More" FontSize="16" TextColor="white" VerticalTextAlignment="Center"
@@ -53,6 +55,7 @@
                         ColorsList="#20002c,#20002c,#cbb4d4"
                         Mode="ToTopRight">
                         <StackLayout VerticalOptions="CenterAndExpand">
+                            <Image HeightRequest="60" WidthRequest="60" Source="products.png"></Image>
                             <Label Text="PRODUCTS" FontSize="26" TextColor="WHITE" VerticalTextAlignment="Center" FontFamily="Roboto-Black.ttf#Roboto-Black"
                                HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
                             <Label Text="Information about your current Products" FontSize="16" TextColor="white" VerticalTextAlignment="Center"
@@ -68,6 +71,7 @@
                         ColorsList="#34e89e,#0f3443,#0f3443"
                         Mode="ToTopRight">
                         <StackLayout VerticalOptions="CenterAndExpand">
+                            <Image HeightRequest="60" WidthRequest="60" Source="inventory.png"></Image>
                             <Label Text="INVENTORY" FontSize="26" TextColor="WHITE" VerticalTextAlignment="Center" FontFamily="Roboto-Black.ttf#Roboto-Black"
                                HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
                             <Label Text="Know more about your stock" FontSize="16" TextColor="white" VerticalTextAlignment="Center"
