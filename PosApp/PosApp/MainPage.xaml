@@ -4,31 +4,45 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:customrenderer="clr-namespace:CustomRenderer"
+             xmlns:renderers="clr-namespace:PosApp"
              mc:Ignorable="d"
-             x:Class="PosApp.MainPage" BackgroundColor="#3484A5"
-             BackgroundImageSource="background1.jpg">
+             x:Class="PosApp.MainPage">
     <ContentPage.Content>
-        <StackLayout Padding="0,0,0,200" >
-            
-                <BoxView HeightRequest="150"></BoxView>
-            
-            <Label FontSize="22" WidthRequest="140" Text="LOGIN FORM" BackgroundColor="#0275d8"
-                       TextColor="White" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold" HorizontalOptions="Center" />
 
-            <Label FontSize="16" WidthRequest="220" Text="Best Place to See Shop Stats" BackgroundColor="#0275d8"
+        <renderers:GradientLayout
+                        ColorsList="#3A1C71,#D76D77,#FFAF7B"
+                        Mode="ToBottomRight" Padding="0,0,0,200">
+            <!--<StackLayout Padding="0,0,0,200" >-->
+
+            <BoxView HeightRequest="150"></BoxView>
+
+            <Label FontSize="22" WidthRequest="140" Text="LOGIN"
+                       TextColor="White" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold" HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"/>
+
+            <Label FontSize="16" WidthRequest="220" Text="Best Place to See Shop Stats"
                        TextColor="White" FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold"  HorizontalOptions="Center"/>
-            
-                <customrenderer:MyEntry x:Name="Username" Margin="30,0,30,0" FontSize="22"
+
+            <customrenderer:ImageEntry Margin="5" x:Name="Username" TextColor="White" 
+                        PlaceholderColor="White" 
+                        Image="username" FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46"
+                        Placeholder="USERNAME" HorizontalTextAlignment="Center" 
+                        HorizontalOptions="FillAndExpand"/>
+            <!--<customrenderer:MyEntry x:Name="Username" Margin="30,0,30,0" FontSize="22"
                                         FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46"
                                         BackgroundColor="White" TextColor="Black" Placeholder="USERNAME"
-                                        HorizontalTextAlignment="Center" ></customrenderer:MyEntry>
-            
-                <customrenderer:MyEntry x:Name="Password" Margin="30,0,30,0" FontSize="22"
+                                        HorizontalTextAlignment="Center" ></customrenderer:MyEntry>-->
+            <customrenderer:ImageEntry Margin="5" x:Name="Password" TextColor="White" 
+                        PlaceholderColor="White" IsPassword="True"
+                        Image="password" FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46"
+                        Placeholder="PASSWORD" HorizontalTextAlignment="Center" 
+                        HorizontalOptions="FillAndExpand"/>
+            <!--<customrenderer:MyEntry x:Name="Password" Margin="30,0,30,0" FontSize="22"
                                         FontFamily="Roboto-Black.ttf#Roboto-Black" HeightRequest="46"
                                         BackgroundColor="White" TextColor="Black" Placeholder="PASSWORD"
-                                        HorizontalTextAlignment="Center" IsPassword="True" ></customrenderer:MyEntry>
-            
-                <Button WidthRequest="160" HorizontalOptions="Center" BackgroundColor="#0275d8" TextColor="White"
+                                        HorizontalTextAlignment="Center" IsPassword="True" ></customrenderer:MyEntry>-->
+
+            <Button WidthRequest="160" HorizontalOptions="Center" BackgroundColor="#0275d8" TextColor="White"
                         BorderWidth="20" CornerRadius="30" Text="Continue" Clicked="Button_Clicked"
                         FontFamily="OpenSans-SemiBold.ttf#OpenSans-SemiBold"></Button>
 
@@ -40,8 +54,9 @@
                         Placeholder="Email" 
                         HorizontalOptions="FillAndExpand"/>
             </StackLayout>-->
-            
-        </StackLayout>  
+
+            <!--</StackLayout>-->
+        </renderers:GradientLayout>
     </ContentPage.Content>
     
 </ContentPage>
